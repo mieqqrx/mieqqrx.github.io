@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>lr | 8</title>
+    <title>lr | 9</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"><body>
     <div class="wrapper">
         <h1 id="res"></h1>
         <div class="interface">
             <div class="u">
-                <h2>User</h2>
+                <h2 id="username">User</h2>
                 <div class="sc">
                     <p class="u-score" id="u-score">0</p>
                 </div>
-                <div class="val">
-                    <p class="u-val" id="u-val">0</p>
-                </div>
+                    <img id="u-card" src="img/card.png">
             </div>
 
             <div class="buttons">
-                <button id="button">Generate</button>
+                <p id="attempt">attempt 0 of 3</p>
+                <button id="button">Draw a card</button>
                 <button id="try-again">Try again</button>
             </div>   
                 
@@ -33,10 +31,7 @@
                 <div class="sc">
                     <p class="c-score" id="c-score">0</p>
                 </div>
-
-                <div class="val">
-                    <p class="c-val" id="c-val">0</p>
-                </div>
+                <img id="c-card" src="img/card.png">
             </div>
         </div>
     </div>
