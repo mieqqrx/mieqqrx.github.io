@@ -5,10 +5,10 @@
 }
 
 body {
-    background: url(img/background.jpg) no-repeat;
+    background: url(img/bg.jpg) no-repeat;
     background-size: cover;
 
-    font-family: "Inconsolata", monospace;
+    font-family: "Titillium Web", sans-serif;
     color: #cccccc;
     font-size: 24px;
 
@@ -20,13 +20,13 @@ body {
 
 .wrapper {
     max-width: 800px;
-    height: 65%;
+    height: 72%;
     width: 100%;
 
     background-color: rgba(15, 15, 15, 0.3);
     backdrop-filter: blur(5px);
 
-    padding: 0px 120px;
+    padding: 30px 70px;
     border-radius: 8px;
 
     display: flex;
@@ -37,8 +37,9 @@ body {
 }
 
 h1{
-    margin: 0px 0px 70px 0px;
+    margin: 0px 0px 20px 0px;
     display: none;
+    font-size: 40px;
 }
 
 .interface{
@@ -46,7 +47,6 @@ h1{
 
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
 }
 
@@ -60,7 +60,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 15px;
 }
 
 .c{
@@ -70,24 +69,30 @@ h2 {
 }
 
 .sc{
-    padding: 10px 30px;
-    background-color: #8f9275;
+    padding: 5px 20px;
+    background-color: #86695c;
     border-radius: 20px;
 
     margin-bottom: 30px;
 }
 
-.val{
-    padding: 20px 27px;
-    
-    background-color: #607c56;
-    border-radius: 50px;
+#u-card{
+    height: 250px;
+}
+
+#c-card{
+    height: 250px;
 }
 
 .buttons{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 40%;
+}
+
+#attempt{
+    display: none;
 }
 
 #try-again{
@@ -100,12 +105,12 @@ h2 {
 }
 
 button {
-    width: 100%;
+    width: 80%;
     height: auto;
     padding: 15px 10px;
     margin-top: 10px;
 
-    background-color: #607c56;
+    background-color: #85634e;
 
     border: none;
     border-radius: 14px;
@@ -120,7 +125,7 @@ button {
 }
 
 button:hover {
-    background-color: #485743;
+    background-color: #634939;
     transform: scale(1.03);
 }
 
