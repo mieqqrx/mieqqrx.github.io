@@ -20,7 +20,7 @@ body {
 
 .wrapper {
     max-width: 800px;
-    height: 72%;
+    height: 80%;
     width: 100%;
 
     background-color: rgba(15, 15, 15, 0.3);
@@ -33,13 +33,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 
 }
 
-h1{
+#res{
     margin: 0px 0px 20px 0px;
-    display: none;
     font-size: 40px;
+    position: absolute;
+    top: 5%;
 }
 
 .interface{
@@ -47,7 +49,8 @@ h1{
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
 }
 
 h2 {
@@ -55,33 +58,38 @@ h2 {
 
     font-size: 28px;
 }
-
 .u{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.c{
+.slot{
+    width: 395px;
+    height: 210px;
+    position: relative;
+    
+}
+
+.lines{
+    width: 314.6px;
+    height: auto;
+    position: absolute;
+    justify-content: space-between;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    top: 45%;
+    left: 28.1%;
 }
 
-.sc{
-    padding: 5px 20px;
-    background-color: #86695c;
-    border-radius: 20px;
+.line{
+    background: url('img/reel.jpg');
+    background-position: 0 0;
+    background-repeat: repeat-y;
 
-    margin-bottom: 30px;
-}
-
-#u-card{
-    height: 250px;
-}
-
-#c-card{
-    height: 250px;
+    width: 100px;
+    height: 115px;
+    border-radius: 10px;
 }
 
 .buttons{
@@ -89,10 +97,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 40%;
-}
-
-#attempt{
-    display: none;
 }
 
 #try-again{
@@ -142,5 +146,31 @@ button:hover {
 
     h2{
         font-size: 24px;
+    }
+}
+
+.win {
+    animation: win 200ms steps(2, end) infinite;
+}
+
+@keyframes win {
+    0% { 
+        background: #25b50b; 
+        box-shadow: 0 0 80px #14b901;
+    }
+    100% { 
+        background: transparent;
+    }
+}
+.lose {
+    animation: lose 200ms steps(2, end) infinite;
+}
+@keyframes lose {
+    0% { 
+        background: rgb(192, 4, 4); 
+        box-shadow: 0 0 80px rgb(255, 1, 1);
+    }
+    100% { 
+        background: transparent; 
     }
 }
